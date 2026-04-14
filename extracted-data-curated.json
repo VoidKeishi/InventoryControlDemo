@@ -1,0 +1,722 @@
+[
+  {
+    "id": "1",
+    "name": "Vách máy phải, Phớt NJK TC 16.4xФ30x5",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "2",
+    "name": "Vách máy giữa",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "3",
+    "name": "Vách máy trái  liền vòng bi 6203/P6,        6303x3-2/P63,  6201/P6",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "4",
+    "name": "Vỏ hộp số, liền vòng bi 6204-ZRS,              6201/P6 = 2,  Phớt NJK  27xФ42x7, liền vòi thông hơi láp",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "5",
+    "name": "Nắp giàn cò, liền vòi thông hơi ( nắp đầu bò)",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 1,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "6",
+    "name": "Nắp bưởng côn khắc chữ victoria, nắp trang trí, lọc bụi",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 1,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "7",
+    "name": "Xi lanh cao 60mm, nghi 49cm3",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 3,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "8",
+    "name": "Bộ xéc măng",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "9",
+    "name": "Quả pit tong phi 37,5mm",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "10",
+    "name": "Chốt pit tong phi 10mm",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "11",
+    "name": "Phanh gài chốt pít tông",
+    "unit": "Chiếc",
+    "category": "Ốc vít/Bu lông",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "12",
+    "name": "Đầu bò cao 52,5mm",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "13",
+    "name": "Giá giàn cò",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "14",
+    "name": "Trục cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "15",
+    "name": "Cò mổ xupap",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 2,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "16",
+    "name": "Ắc cò ngắn",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "17",
+    "name": "Ắc cò dài",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "18",
+    "name": "Phanh chặn trục cam Fi 32",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "19",
+    "name": "Bánh răng cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "20",
+    "name": "Xích cam kép 86 mắt",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "21",
+    "name": "Thanh tì xích đề trên",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "22",
+    "name": "Thanh đỡ xích đề dưới",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "23",
+    "name": "Tăng cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "24",
+    "name": "Buzi ( NGK C7HSA)",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "25",
+    "name": "Cổ hút + đai",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "26",
+    "name": "Phíp cổ hút",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "27",
+    "name": "Vô năng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "28",
+    "name": "Cuộn điện",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "29",
+    "name": "Bơm dầu",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "30",
+    "name": "Bộ củ đề",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "31",
+    "name": "Bộ côn trước",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 2,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "32",
+    "name": "Bộ côn sau",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 400,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "33",
+    "name": "Dây curoa BEL T 669 18 30",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "34",
+    "name": "Chốt móc lò xo chân A( Fi 8*58)",
+    "unit": "Chiếc",
+    "category": "Khung sườn",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "35",
+    "name": "Cần khởi động",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "36",
+    "name": "Gioăng cổ pô",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "37",
+    "name": "Trục cơ, bên phải bi 6204/P53, bên trái 6304/P5",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "38",
+    "name": "Trục bánh răng khởi động + long đen + bạc+ lò xo",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "39",
+    "name": "Trục bánh răng lai đề",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "40",
+    "name": "Trục bánh răng thứ cấp hộp số",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "41",
+    "name": "Trục bánh răng sơ cấp 15 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "42",
+    "name": "Trục bánh răng trung gian hộp số 53 răng 14 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "43",
+    "name": "Trục M8*56 ( bắt trục má phanh sau )",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "44",
+    "name": "Bánh răng trục sơ cấp 52 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "45",
+    "name": "Bánh răng đĩa đề 53 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "46",
+    "name": "Bánh răng lai bơm dẫu 26 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "47",
+    "name": "Bánh răng lai đề 20 răng",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "48",
+    "name": "Bánh răng đề 14 răng+ trục",
+    "unit": "Bộ",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "49",
+    "name": "Nẹp kẹp dây điện",
+    "unit": "Chiếc",
+    "category": "Điện/Đèn",
+    "currentStock": 200,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "50",
+    "name": "Nẹp đỡ ống thông hơi động cơ",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 200,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "51",
+    "name": "Nẹp đỡ dây xả xăng",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "52",
+    "name": "Nẹp đỡ dây phanh",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "53",
+    "name": "Nẹp giữ lò xo khởi động",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "54",
+    "name": "Nắp nhựa bảo vệ quạt gió",
+    "unit": "Chiếc",
+    "category": "Nhựa/Vỏ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "55",
+    "name": "Nắp nhựa bảo vệ trên xilanh",
+    "unit": "Chiếc",
+    "category": "Nhựa/Vỏ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "56",
+    "name": "Nắp nhựa bảo vệ dưới xilanh",
+    "unit": "Chiếc",
+    "category": "Nhựa/Vỏ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "57",
+    "name": "Quạt gió làm mát động cơ",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "58",
+    "name": "Giong giấy vách máy phải",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "59",
+    "name": "Giong giấy đáy xilanh",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "60",
+    "name": "Giong giấy tăng cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "61",
+    "name": "Giong giấy bưởng côn",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "62",
+    "name": "Giong giấy hộp số",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "63",
+    "name": "Giong giấy vách gữa",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "64",
+    "name": "Giong giấy đệm phíp cổ hút",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "65",
+    "name": "Giong cao su viềm đầu xilanh",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "66",
+    "name": "Giong cao su nắp đầu giàn xu páp",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "67",
+    "name": "Giong quy nát",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "68",
+    "name": "Giong chữ O 20*1,5 phíp chế",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 1200,
+    "bomQty": 2,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "69",
+    "name": "Giong chữ O  15,2*1,5 Bulong lục giác bắt thanh tỳ xích cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "70",
+    "name": "Giong chữ O 2*1,5 đầu tăng cam",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "71",
+    "name": "Ống thông hơi + kẹp 2 đầu",
+    "unit": "Chiếc",
+    "category": "Khác",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "72",
+    "name": "Phớt nắp đầu giàn cò",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 2,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "73",
+    "name": "Phớt trục sơ cấp hộp số NJK TC 17xФ30x6",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "74",
+    "name": "Phớt đầu trục biên vách phải HTCL 19.8xФ30x5   NJK",
+    "unit": "Chiếc",
+    "category": "Gioăng/Phớt",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "75",
+    "name": "Ắc gô M6x14 ( bắt vách giữa + bưởng côn)",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 6,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "76",
+    "name": "Ắc gô M7x14 ( giàn cò + xi lanh + đầu bò)",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 6,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "77",
+    "name": "Ắc gô M8x20 vỏ hộp số",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 2,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "78",
+    "name": "Ê cu M20 4 chấu bắt bánh răng đề",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "79",
+    "name": "Ê cu M12 giác 17 bắt côn trước",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 600,
+    "bomQty": 1,
+    "model": "AT88 PASSION / ROYAL"
+  },
+  {
+    "id": "80",
+    "name": "Ê cu  M10 giác 14 ( bắt côn sau + vô năng )",
+    "unit": "Chiếc",
+    "category": "Động cơ",
+    "currentStock": 1200,
+    "bomQty": 2,
+    "model": "AT88 PASSION / ROYAL"
+  }
+]
