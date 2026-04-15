@@ -91,7 +91,7 @@ export default function CapacityPage() {
               <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-warning-container px-4 py-1.5">
                 <AlertTriangle size={16} className="text-[#e37400]" />
                 <span className="text-sm font-medium text-[#e37400]">
-                  Bottleneck: {capacity.bottleneck.itemName} (còn{" "}
+                  Nguyên liệu thiếu: {capacity.bottleneck.itemName} (còn{" "}
                   {formatNumber(capacity.bottleneck.currentStock)}, cần{" "}
                   {capacity.bottleneck.requiredPerUnit}/xe)
                 </span>
@@ -169,7 +169,7 @@ export default function CapacityPage() {
                         <TableCell className="px-3 text-center">
                           {isBottleneck ? (
                             <Badge className="bg-error-container text-destructive border-0">
-                              Bottleneck
+                              Thiếu
                             </Badge>
                           ) : (
                             <Badge className="bg-success-container text-[#1e8e3e] border-0">

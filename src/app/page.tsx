@@ -285,7 +285,7 @@ function CapacityOverviewCard({ results }: { results: CapacityResult[] }) {
                 </p>
                 {r.bottleneck && (
                   <p className="text-small text-muted-foreground mt-1 truncate" title={r.bottleneck.itemName}>
-                    Bottleneck: {r.bottleneck.itemName}
+                    Nguyên liệu thiếu: {r.bottleneck.itemName}
                   </p>
                 )}
               </div>
