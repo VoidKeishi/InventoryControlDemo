@@ -80,6 +80,8 @@ export function ReceiptByBom() {
       quantity: line.receiptQty,
       bomId: selectedBomId,
       bomVersion: selectedBom?.currentVersion ?? null,
+      poId: null,
+      unitPrice: null,
       reason: `Nhập kho theo BOM: ${selectedBom?.name ?? selectedBomId}`,
       createdAt: now,
       createdBy: "Nhân viên kho",

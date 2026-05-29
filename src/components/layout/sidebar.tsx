@@ -12,6 +12,9 @@ import {
   Package,
   Factory,
   ShoppingCart,
+  ClipboardList,
+  Truck,
+  FileSpreadsheet,
   Gauge,
   Smartphone,
   ScanLine,
@@ -61,6 +64,19 @@ const navigation: NavSection[] = [
       { href: "/items", label: "Danh sách vật liệu", icon: Package },
       { href: "/bom/production", label: "BOM Sản xuất", icon: Factory },
       { href: "/bom/purchase", label: "BOM Mua hàng", icon: ShoppingCart },
+    ],
+  },
+  {
+    title: "MUA HÀNG",
+    items: [
+      { href: "/purchase-orders", label: "Đơn mua hàng", icon: ClipboardList },
+      { href: "/suppliers", label: "Nhà cung cấp", icon: Truck },
+    ],
+  },
+  {
+    title: "BÁO CÁO",
+    items: [
+      { href: "/reports/stock-summary", label: "Nhập-Xuất-Tồn", icon: FileSpreadsheet },
     ],
   },
   {

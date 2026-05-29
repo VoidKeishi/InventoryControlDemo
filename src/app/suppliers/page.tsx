@@ -13,9 +13,8 @@ import {
 import { Plus, Search } from "lucide-react";
 import { toast } from "sonner";
 import { useBoundStore } from "@/store";
-import { getStockMap } from "@/store/selectors";
-import { getItemColumns } from "@/components/items/columns";
-import { ItemFormDialog } from "@/components/items/item-form-dialog";
+import { getSupplierColumns } from "@/components/suppliers/supplier-columns";
+import { SupplierFormDialog } from "@/components/suppliers/supplier-form-dialog";
 import { ConfirmDialog } from "@/components/shared/confirm-dialog";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
@@ -35,39 +34,35 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import type { Item } from "@/types";
-import { generateId } from "@/lib/id";
+import type { Supplier } from "@/types";
 
-export default function ItemsPage() {
-  const items = useBoundStore((s) => s.items);
-  const movements = useBoundStore((s) => s.movements);
-  const addItem = useBoundStore((s) => s.addItem);
-  const updateItem = useBoundStore((s) => s.updateItem);
-  const deleteItem = useBoundStore((s) => s.deleteItem);
-
-  const stockMap = useMemo(() => getStockMap(movements), [movements]);
+export default function SuppliersPage() {
+  const suppliers = useBoundStore((s) => s.suppliers);
+  const purchaseOrders = useBoundStore((s) => s.purchaseOrders);
+  const addSupplier = useBoundStore((s) => s.addSupplier);
+  const updateSupplier = useBoundStore((s) => s.updateSupplier);
+  const deleteSupplier = useBoundStore((s) => s.deleteSupplier);
 
   const [formOpen, setFormOpen] = useState(false);
-  const [editingItem, setEditingItem] = useState<Item | null>(null);
-  const [deleteTarget, setDeleteTarget] = useState<Item | null>(null);
+  const [editing, setEditing] = useState<Supplier | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<Supplier | null>(null);
   const [globalFilter, setGlobalFilter] = useState("");
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const columns = useMemo(
     () =>
-      getItemColumns({
-        onEdit: (item) => {
-          setEditingItem(item);
+      getSupplierColumns({
+        onEdit: (s) => {
+          setEditing(s);
           setFormOpen(true);
         },
         onDelete: setDeleteTarget,
-        stockMap,
       }),
-    [stockMap],
+    [],
   );
 
   const table = useReactTable({
-    data: items,
+    data: suppliers,
     columns,
     state: { globalFilter, sorting },
     onGlobalFilterChange: setGlobalFilter,
@@ -81,32 +76,37 @@ export default function ItemsPage() {
 
   function handleFormSubmit(values: {
     name: string;
-    unit: string;
-    category: string;
-    minStock: number | null;
+    phone: string;
+    email: string;
+    address: string;
+    taxId: string;
+    note: string;
   }) {
-    if (editingItem) {
-      updateItem(editingItem.id, values);
-      toast.success(`Đã cập nhật vật liệu ${editingItem.id}`);
+    if (editing) {
+      updateSupplier(editing.id, values);
+      toast.success(`Đã cập nhật nhà cung cấp ${editing.id}`);
     } else {
-      const prefix = getCategoryPrefix(values.category);
-      const nextNum = getNextItemNumber(items, prefix);
-      const id = `${prefix}-${String(nextNum).padStart(3, "0")}`;
-      addItem({
-        id,
-        ...values,
-        standardCost: null,
-        uomConversions: [],
-      });
-      toast.success(`Đã thêm vật liệu ${id}`);
+      const id = nextSupplierId(suppliers);
+      addSupplier({ id, ...values });
+      toast.success(`Đã thêm nhà cung cấp ${id}`);
     }
-    setEditingItem(null);
+    setEditing(null);
   }
 
   function handleDelete() {
     if (!deleteTarget) return;
-    deleteItem(deleteTarget.id);
-    toast.success(`Đã xoá vật liệu ${deleteTarget.id}`);
+    const referenced = purchaseOrders.some(
+      (po) => po.supplierId === deleteTarget.id,
+    );
+    if (referenced) {
+      toast.error(
+        `Không thể xoá: nhà cung cấp ${deleteTarget.id} đang được tham chiếu trong đơn mua hàng`,
+      );
+      setDeleteTarget(null);
+      return;
+    }
+    deleteSupplier(deleteTarget.id);
+    toast.success(`Đã xoá nhà cung cấp ${deleteTarget.id}`);
     setDeleteTarget(null);
   }
 
@@ -117,15 +117,15 @@ export default function ItemsPage() {
 
   return (
     <>
-      <Header title="Danh sách vật liệu">
+      <Header title="Nhà cung cấp">
         <Button
           onClick={() => {
-            setEditingItem(null);
+            setEditing(null);
             setFormOpen(true);
           }}
         >
           <Plus size={16} />
-          Thêm vật liệu
+          Thêm nhà cung cấp
         </Button>
       </Header>
 
@@ -136,7 +136,7 @@ export default function ItemsPage() {
             className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
           />
           <Input
-            placeholder="Tìm kiếm vật liệu..."
+            placeholder="Tìm kiếm nhà cung cấp..."
             value={globalFilter}
             onChange={(e) => setGlobalFilter(e.target.value)}
             className="pl-9"
@@ -243,13 +243,13 @@ export default function ItemsPage() {
         </div>
       </div>
 
-      <ItemFormDialog
+      <SupplierFormDialog
         open={formOpen}
         onOpenChange={(open) => {
           setFormOpen(open);
-          if (!open) setEditingItem(null);
+          if (!open) setEditing(null);
         }}
-        item={editingItem}
+        supplier={editing}
         onSubmit={handleFormSubmit}
       />
 
@@ -258,8 +258,8 @@ export default function ItemsPage() {
         onOpenChange={(open) => {
           if (!open) setDeleteTarget(null);
         }}
-        title={`Xoá vật liệu ${deleteTarget?.id}?`}
-        description={`Vật liệu "${deleteTarget?.name}" sẽ bị xoá khỏi hệ thống. Hành động này không thể hoàn tác.`}
+        title={`Xoá nhà cung cấp ${deleteTarget?.id}?`}
+        description={`Nhà cung cấp "${deleteTarget?.name}" sẽ bị xoá khỏi hệ thống. Hành động này không thể hoàn tác.`}
         confirmLabel="Xoá"
         destructive
         onConfirm={handleDelete}
@@ -268,26 +268,13 @@ export default function ItemsPage() {
   );
 }
 
-function getCategoryPrefix(category: string): string {
-  const prefixMap: Record<string, string> = {
-    "Động cơ": "DC",
-    "Khung sườn": "KS",
-    "Ốc vít/Bu lông": "OV",
-    "Điện/Đèn": "DD",
-    "Nhựa/Vỏ": "NV",
-    "Gioăng/Phớt": "GP",
-    "Phụ kiện": "PK",
-    "Khác": "KH",
-  };
-  return prefixMap[category] ?? "KH";
-}
-
-function getNextItemNumber(items: Item[], prefix: string): number {
-  const existing = items
-    .filter((i) => i.id.startsWith(prefix + "-"))
-    .map((i) => {
-      const num = parseInt(i.id.split("-")[1], 10);
-      return isNaN(num) ? 0 : num;
+function nextSupplierId(suppliers: Supplier[]): string {
+  const existing = suppliers
+    .filter((s) => s.id.startsWith("SUP-"))
+    .map((s) => {
+      const n = parseInt(s.id.split("-")[1], 10);
+      return isNaN(n) ? 0 : n;
     });
-  return existing.length > 0 ? Math.max(...existing) + 1 : 1;
+  const next = existing.length > 0 ? Math.max(...existing) + 1 : 1;
+  return `SUP-${String(next).padStart(3, "0")}`;
 }

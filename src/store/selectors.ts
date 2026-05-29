@@ -129,3 +129,115 @@ export function getProductionCapacity(
     details: details.sort((a, b) => a.maxProducible - b.maxProducible),
   };
 }
+
+export interface StockSummaryBucket {
+  qty: number;
+  value: number;
+}
+
+export interface StockSummaryRow {
+  item: Item;
+  opening: StockSummaryBucket;
+  receipts: StockSummaryBucket;
+  issues: StockSummaryBucket;
+  adjustments: StockSummaryBucket;
+  closing: StockSummaryBucket;
+}
+
+export function getStockSummaryInPeriod(
+  items: Item[],
+  movements: StockMovement[],
+  startDate: Date,
+  endDate: Date,
+): StockSummaryRow[] {
+  const startMs = startDate.getTime();
+  const endMs = endDate.getTime();
+
+  const byItem = new Map<string, StockMovement[]>();
+  for (const m of movements) {
+    const list = byItem.get(m.itemId);
+    if (list) list.push(m);
+    else byItem.set(m.itemId, [m]);
+  }
+  for (const list of byItem.values()) {
+    list.sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+  }
+
+  return items.map((item) => {
+    const list = byItem.get(item.id) ?? [];
+    const fallbackCost = item.standardCost ?? 0;
+
+    let qty = 0;
+    let wac = fallbackCost;
+    const opening: StockSummaryBucket = { qty: 0, value: 0 };
+    const receipts: StockSummaryBucket = { qty: 0, value: 0 };
+    const issues: StockSummaryBucket = { qty: 0, value: 0 };
+    const adjustments: StockSummaryBucket = { qty: 0, value: 0 };
+    let openingCaptured = false;
+
+    const captureOpening = () => {
+      if (!openingCaptured) {
+        opening.qty = qty;
+        opening.value = qty * wac;
+        openingCaptured = true;
+      }
+    };
+
+    for (const m of list) {
+      const ts = new Date(m.createdAt).getTime();
+      if (ts >= startMs && !openingCaptured) captureOpening();
+      if (ts > endMs) break;
+
+      const inPeriod = ts >= startMs && ts <= endMs;
+
+      if (m.type === "receipt") {
+        const price = m.unitPrice ?? fallbackCost;
+        const newQty = qty + m.quantity;
+        if (newQty > 0) {
+          wac = (qty * wac + m.quantity * price) / newQty;
+        }
+        qty = newQty;
+        if (inPeriod) {
+          receipts.qty += m.quantity;
+          receipts.value += m.quantity * price;
+        }
+      } else if (m.type === "issue") {
+        const outQty = Math.abs(m.quantity);
+        if (inPeriod) {
+          issues.qty += outQty;
+          issues.value += outQty * wac;
+        }
+        qty += m.quantity;
+      } else if (m.type === "adjustment") {
+        if (m.quantity >= 0) {
+          const price = m.unitPrice ?? fallbackCost;
+          const newQty = qty + m.quantity;
+          if (newQty > 0) {
+            wac = (qty * wac + m.quantity * price) / newQty;
+          }
+          qty = newQty;
+          if (inPeriod) {
+            adjustments.qty += m.quantity;
+            adjustments.value += m.quantity * price;
+          }
+        } else {
+          const outQty = Math.abs(m.quantity);
+          if (inPeriod) {
+            adjustments.qty += m.quantity;
+            adjustments.value -= outQty * wac;
+          }
+          qty += m.quantity;
+        }
+      }
+    }
+
+    if (!openingCaptured) captureOpening();
+
+    const closing: StockSummaryBucket = {
+      qty: opening.qty + receipts.qty - issues.qty + adjustments.qty,
+      value: qty * wac,
+    };
+
+    return { item, opening, receipts, issues, adjustments, closing };
+  });
+}

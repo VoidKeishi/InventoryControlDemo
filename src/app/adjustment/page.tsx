@@ -43,6 +43,8 @@ export default function AdjustmentPage() {
       quantity: qty,
       bomId: null,
       bomVersion: null,
+      poId: null,
+      unitPrice: null,
       reason: reason.trim(),
       createdAt: new Date().toISOString(),
       createdBy: "Quản lý kho",

@@ -31,6 +31,8 @@ export function ReceiptIndividual() {
       quantity: qty,
       bomId: null,
       bomVersion: null,
+      poId: null,
+      unitPrice: null,
       reason: reason.trim() || "Nhập kho lẻ",
       createdAt: new Date().toISOString(),
       createdBy: "Nhân viên kho",

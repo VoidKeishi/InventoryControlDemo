@@ -97,6 +97,8 @@ export function IssueByBom() {
       quantity: -line.totalRequired,
       bomId: selectedBomId,
       bomVersion: selectedBom.currentVersion,
+      poId: null,
+      unitPrice: null,
       reason: `Xuất kho sản xuất ${count} xe ${selectedBom.name}`,
       createdAt: now,
       createdBy: "Nhân viên kho",

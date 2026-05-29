@@ -7,6 +7,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Động cơ",
     minStock: 30,
+    standardCost: 1200000,
     uomConversions: [],
   },
   {
@@ -15,6 +16,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Động cơ",
     minStock: 30,
+    standardCost: 1100000,
     uomConversions: [],
   },
   {
@@ -23,6 +25,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Động cơ",
     minStock: 30,
+    standardCost: 1500000,
     uomConversions: [],
   },
   {
@@ -31,6 +34,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 20,
+    standardCost: 850000,
     uomConversions: [],
   },
   {
@@ -39,6 +43,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Động cơ",
     minStock: 25,
+    standardCost: 150000,
     uomConversions: [],
   },
   {
@@ -47,6 +52,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 25,
+    standardCost: 180000,
     uomConversions: [],
   },
   {
@@ -55,6 +61,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 15,
+    standardCost: 450000,
     uomConversions: [],
   },
   {
@@ -63,6 +70,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 15,
+    standardCost: 220000,
     uomConversions: [],
   },
   {
@@ -71,6 +79,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 20,
+    standardCost: 380000,
     uomConversions: [],
   },
   {
@@ -79,6 +88,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Động cơ",
     minStock: 15,
+    standardCost: 950000,
     uomConversions: [],
   },
   {
@@ -87,6 +97,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 12,
+    standardCost: 1450000,
     uomConversions: [],
   },
   {
@@ -95,6 +106,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 10,
+    standardCost: 680000,
     uomConversions: [],
   },
   {
@@ -103,6 +115,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 20,
+    standardCost: 120000,
     uomConversions: [],
   },
   {
@@ -111,6 +124,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 15,
+    standardCost: 95000,
     uomConversions: [],
   },
   {
@@ -119,6 +133,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 40,
+    standardCost: 8000,
     uomConversions: [],
   },
   {
@@ -127,6 +142,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khung sườn",
     minStock: 10,
+    standardCost: 220000,
     uomConversions: [],
   },
   {
@@ -135,6 +151,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 50,
+    standardCost: 500,
     uomConversions: [],
   },
   {
@@ -143,6 +160,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 50,
+    standardCost: 800,
     uomConversions: [],
   },
   {
@@ -151,6 +169,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 40,
+    standardCost: 300,
     uomConversions: [],
   },
   {
@@ -159,6 +178,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 40,
+    standardCost: 500,
     uomConversions: [],
   },
   {
@@ -167,6 +187,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 40,
+    standardCost: 400,
     uomConversions: [],
   },
   {
@@ -175,6 +196,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Ốc vít/Bu lông",
     minStock: 20,
+    standardCost: 1200,
     uomConversions: [],
   },
   {
@@ -183,6 +205,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Điện/Đèn",
     minStock: 15,
+    standardCost: 380000,
     uomConversions: [],
   },
   {
@@ -191,6 +214,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Điện/Đèn",
     minStock: 12,
+    standardCost: 280000,
     uomConversions: [],
   },
   {
@@ -199,6 +223,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Điện/Đèn",
     minStock: 15,
+    standardCost: 180000,
     uomConversions: [],
   },
   {
@@ -207,6 +232,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Điện/Đèn",
     minStock: 20,
+    standardCost: 85000,
     uomConversions: [],
   },
   {
@@ -215,6 +241,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Điện/Đèn",
     minStock: 10,
+    standardCost: 420000,
     uomConversions: [],
   },
   {
@@ -223,6 +250,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Điện/Đèn",
     minStock: 30,
+    standardCost: 1500,
     uomConversions: [],
   },
   {
@@ -231,6 +259,7 @@ export const seedItems: Item[] = [
     unit: "Mét",
     category: "Điện/Đèn",
     minStock: 40,
+    standardCost: 12000,
     uomConversions: [{ unit: "Cuộn", factor: 50 }],
   },
   {
@@ -239,6 +268,7 @@ export const seedItems: Item[] = [
     unit: "Mét",
     category: "Điện/Đèn",
     minStock: 30,
+    standardCost: 3500,
     uomConversions: [{ unit: "Cuộn", factor: 100 }],
   },
   {
@@ -247,6 +277,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 20,
+    standardCost: 45000,
     uomConversions: [],
   },
   {
@@ -255,6 +286,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 20,
+    standardCost: 55000,
     uomConversions: [],
   },
   {
@@ -263,6 +295,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 20,
+    standardCost: 55000,
     uomConversions: [],
   },
   {
@@ -271,6 +304,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 12,
+    standardCost: 180000,
     uomConversions: [],
   },
   {
@@ -279,6 +313,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 12,
+    standardCost: 180000,
     uomConversions: [],
   },
   {
@@ -287,6 +322,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Nhựa/Vỏ",
     minStock: 10,
+    standardCost: 220000,
     uomConversions: [],
   },
   {
@@ -295,6 +331,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Gioăng/Phớt",
     minStock: 20,
+    standardCost: 8500,
     uomConversions: [],
   },
   {
@@ -303,6 +340,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Gioăng/Phớt",
     minStock: 20,
+    standardCost: 6000,
     uomConversions: [],
   },
   {
@@ -311,6 +349,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Gioăng/Phớt",
     minStock: 20,
+    standardCost: 7000,
     uomConversions: [],
   },
   {
@@ -319,6 +358,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Gioăng/Phớt",
     minStock: 15,
+    standardCost: 12000,
     uomConversions: [],
   },
   {
@@ -327,6 +367,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Gioăng/Phớt",
     minStock: 15,
+    standardCost: 18000,
     uomConversions: [],
   },
   {
@@ -335,6 +376,7 @@ export const seedItems: Item[] = [
     unit: "Tấm",
     category: "Gioăng/Phớt",
     minStock: 10,
+    standardCost: 95000,
     uomConversions: [],
   },
   {
@@ -343,6 +385,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Phụ kiện",
     minStock: 20,
+    standardCost: 25000,
     uomConversions: [],
   },
   {
@@ -351,6 +394,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Phụ kiện",
     minStock: 15,
+    standardCost: 95000,
     uomConversions: [],
   },
   {
@@ -359,6 +403,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Phụ kiện",
     minStock: 15,
+    standardCost: 35000,
     uomConversions: [],
   },
   {
@@ -367,6 +412,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Phụ kiện",
     minStock: 10,
+    standardCost: 180000,
     uomConversions: [],
   },
   {
@@ -375,6 +421,7 @@ export const seedItems: Item[] = [
     unit: "Bộ",
     category: "Phụ kiện",
     minStock: 10,
+    standardCost: 280000,
     uomConversions: [],
   },
   {
@@ -383,6 +430,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khác",
     minStock: 25,
+    standardCost: 15000,
     uomConversions: [],
   },
   {
@@ -391,6 +439,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khác",
     minStock: 25,
+    standardCost: 18000,
     uomConversions: [],
   },
   {
@@ -399,6 +448,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khác",
     minStock: 15,
+    standardCost: 42000,
     uomConversions: [],
   },
   {
@@ -407,6 +457,7 @@ export const seedItems: Item[] = [
     unit: "Chiếc",
     category: "Khác",
     minStock: 12,
+    standardCost: 95000,
     uomConversions: [],
   },
   {
@@ -415,6 +466,7 @@ export const seedItems: Item[] = [
     unit: "Lít",
     category: "Khác",
     minStock: 12,
+    standardCost: 85000,
     uomConversions: [],
   },
   {
@@ -423,6 +475,7 @@ export const seedItems: Item[] = [
     unit: "Kg",
     category: "Khác",
     minStock: 10,
+    standardCost: 120000,
     uomConversions: [],
   },
 ];
